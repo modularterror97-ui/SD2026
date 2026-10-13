@@ -3,7 +3,7 @@ import time
 def ciclo ():
     cnt = 0
     print("Iniciando ciclo infinito de saludos...")
-    try: # <--- TE FALTA ESTO
+    try:
         while True:
             print(f"{cnt}: Hola este es mi saludo: {cnt}")
             cnt += 1
