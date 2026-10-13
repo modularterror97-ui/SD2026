@@ -2,10 +2,14 @@ import time
 
 def ciclo ():
     cnt = 0
-    while True:
-        print(f"{cnt}: Ciclo en ejecuición")
-        cnt += 1
-        time.sleep(1)
-        
-if __name__=="__main__":
+    print("Iniciando ciclo infinito de saludos...")
+    try: # <--- TE FALTA ESTO
+        while True:
+            print(f"{cnt}: Hola este es mi saludo: {cnt}")
+            cnt += 1
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("Ciclo interrumpido por el usuario.")
+
+if __name__ == "__main__":
     ciclo()
